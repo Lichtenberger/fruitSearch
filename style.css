@@ -1,0 +1,56 @@
+body {
+  background-image: linear-gradient(to right, rgb(250, 250, 6) 20%, rgb(223, 135, 4));
+}
+
+input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+
+.search-container {
+  width: 400px;
+  margin: 15px auto;
+}
+.search-container input,
+.search-container .suggestions {
+  width: 100%;
+  background: #fff;
+  text-align: left;
+}
+.search-container input {
+  background: rgba(247, 184, 50, 0.2);
+  height: 60px;
+  padding: 0 10px;
+}
+.search-container .suggestions {
+  top: 60px;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  max-height: 200px;
+  overflow-y: auto;
+}
+ul.has-suggestions {
+  display: block;
+}
+ul li {
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(248, 208, 51, 0.2);
+}
+ul li:hover {
+  background-color: #e65c00;
+}
+
+input {
+  border-bottom: 2px solid #e65c00;
+}
