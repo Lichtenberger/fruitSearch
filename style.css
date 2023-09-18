@@ -14,20 +14,23 @@ input {
 .search-container {
   width: 400px;
   margin: 15px auto;
+  
 }
 .search-container input,
 .search-container .suggestions {
-  width: 100%;
+  width: 30%;
   background: #fff;
   text-align: left;
-}
+  
+  }
 .search-container input {
   background: rgba(247, 184, 50, 0.2);
   height: 60px;
   padding: 0 10px;
 }
-.search-container .suggestions {
+.search-container .suggestions {  
   top: 60px;
+  
 }
 
 ul {
@@ -38,9 +41,20 @@ ul {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   max-height: 200px;
   overflow-y: auto;
+  
 }
 ul.has-suggestions {
   display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  padding-top: 270px;
+  padding-left: 500px;
+  width: 400vw;
+  
 }
 ul li {
   padding: 10px;
@@ -51,6 +65,6 @@ ul li:hover {
   background-color: #e65c00;
 }
 
-input {
-  border-bottom: 2px solid #e65c00;
+input:hover {
+  border: 2px solid #e65c00;
 }
